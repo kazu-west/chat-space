@@ -1,0 +1,16 @@
+.chat-side
+ .side-header
+  .side-header__box
+   .side-header__box__user-name
+    seo
+   .side-header__box__btn
+    = link_to "#", class: "side-header__box__btn__new-group" do
+     = icon('fas', 'pen-square', class: 'side-header__box__btn__icon')
+    = link_to "#", class: "side-header__box__btn__edit-user" do
+     = icon('fas', 'cog', class: 'side-header__box__btn__icon')
+  
+ .contents
+  .contents__group-name
+   sample
+  .contents__group-message
+   good bye world

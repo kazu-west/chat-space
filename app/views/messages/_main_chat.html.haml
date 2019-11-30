@@ -1,0 +1,27 @@
+.chat-main
+  .main-header
+    .main-header__leftbox
+      group name
+      .main-header__leftbox__member
+        member 
+    = link_to "#", class: "main-header__edit" do
+      Edit
+
+  .messages
+    .message
+      .message__upper-info
+        .message__upper-info__talker
+          syouya
+        .message__upper-info__date
+          2019/11/22
+      .messae__text
+        this is a first message
+
+  .form
+    %form.new_message
+      .input-box
+        %input.input-box__text{:placeholder => "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{class: "input-box__image__text", type: "file"}
+      %input.submit-btn{:value => "send"}
