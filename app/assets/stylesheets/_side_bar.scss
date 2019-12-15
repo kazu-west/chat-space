@@ -38,19 +38,22 @@
  }
 
 
- .contents {
+ .groups {
    background-color: #2f3e51;
    height: calc(100vh - 100px);
-   color: #ffffff;
    font-weight: bold;
    padding: 20px 20px 0 20px;
-   &__group-name {
-     font-size: 15px;
+    .group {
+     &__name {
+       font-size: 15px;
+       color: white;
+     }
+     &__message {
+      font-size: 11px;
+      color: white;
+      padding-top: 5px;
+      padding-bottom: 40px;
+     }
    }
-   &__group-message {
-     font-size: 11px;
-     padding-top: 5px;
-     padding-bottom: 40px;
-   }
- }
+ } 
 }
