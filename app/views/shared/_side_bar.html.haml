@@ -4,9 +4,9 @@
    .side-header__box__user-name
     = current_user.name
    .side-header__box__btn
-    = link_to "groups/new", class: "side-header__box__btn__new-group" do
+    = link_to "/groups/new", class: "side-header__box__btn__new-group" do
      = icon('fas', 'pen-square', class: 'side-header__box__btn__icon')
-    = link_to "users/current_user/edit", class: "side-header__box__btn__edit-user" do
+    = link_to "/users/current_user/edit", class: "side-header__box__btn__edit-user" do
      = icon('fas', 'cog', class: 'side-header__box__btn__icon')
 
 
@@ -18,4 +18,3 @@
       = group.name
      .group__message
       = group.show_last_message
- 
