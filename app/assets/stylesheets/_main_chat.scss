@@ -42,9 +42,9 @@
    background-color: #fafafa;
    overflow: auto;
    .message {
-    &__upper-info {
-      display: flex;
-     &__talker {
+    .upper-message {
+    display: flex;
+     &__user-name {
        font-size: 16px;
        font-weight: bold;
        color: #434a54;
